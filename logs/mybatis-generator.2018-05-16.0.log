@@ -1,0 +1,596 @@
+[INFO] [14:52:44.455] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: com.mysql.jdbc.Driver@204a3816
+[INFO] [14:52:44.467] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: oracle.jdbc.driver.OracleDriver@16fe389a
+[INFO] [14:52:44.475] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: org.postgresql.Driver@2456464a
+[INFO] [14:52:44.603] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: SQLServerDriver:2
+[INFO] [14:52:44.607] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: org.sqlite.JDBC@73f95414
+[INFO] [14:52:44.608] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://com.mysql.jdbc.Driver:3306/1?useUnicode=true&useSSL=false&characterEncoding=utf8
+[ERROR] [14:52:44.876] [JavaFX Application Thread] [] com.zzg.mybatis.generator.controller.DbConnectionController.testConnection:72 --> Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:981) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795) ~[na:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[na:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400) ~[na:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327) ~[na:na]
+	at com.zzg.mybatis.generator.util.DbUtil.getConnection(DbUtil.java:48) ~[classes/:na]
+	at com.zzg.mybatis.generator.controller.DbConnectionController.testConnection(DbConnectionController.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source) [na:1.8.0_121]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source) [na:1.8.0_121]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1771) [jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Node.fireEvent(Node.java:8413) [jfxrt.jar:na]
+	at javafx.scene.control.Button.fire(Button.java:185) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) [jfxrt.jar:na]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) [jfxrt.jar:na]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) [jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_121]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) [jfxrt.jar:na]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_121]
+Caused by: java.net.UnknownHostException: com.mysql.jdbc.Driver
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_121]
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName0(Unknown Source) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(Unknown Source) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298) ~[na:na]
+	... 72 common frames omitted
+[INFO] [14:53:51.028] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:53:51.174] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@4a638331
+[INFO] [14:53:55.716] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:53:55.717] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableNames:55 --> getTableNames, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:53:55.717] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:53:55.723] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@2c4d3971
+[INFO] [14:54:05.821] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:05.821] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableNames:55 --> getTableNames, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:05.822] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:05.827] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@70fbe3e7
+[INFO] [14:54:06.524] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:06.524] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableNames:55 --> getTableNames, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:06.525] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/stu?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:54:06.530] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@6367dffc
+[INFO] [14:54:30.380] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/time?useUnicode=true&useSSL=false&characterEncoding=utf8
+[ERROR] [14:54:30.392] [JavaFX Application Thread] [] com.zzg.mybatis.generator.controller.DbConnectionController.testConnection:72 --> Unknown database 'time'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'time'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[na:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795) ~[na:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[na:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400) ~[na:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327) ~[na:na]
+	at com.zzg.mybatis.generator.util.DbUtil.getConnection(DbUtil.java:48) ~[classes/:na]
+	at com.zzg.mybatis.generator.controller.DbConnectionController.testConnection(DbConnectionController.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source) [na:1.8.0_121]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source) [na:1.8.0_121]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1771) [jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Node.fireEvent(Node.java:8413) [jfxrt.jar:na]
+	at javafx.scene.control.Button.fire(Button.java:185) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) [jfxrt.jar:na]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) [jfxrt.jar:na]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) [jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_121]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) [jfxrt.jar:na]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_121]
+[INFO] [14:54:33.867] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/time?useUnicode=true&useSSL=false&characterEncoding=gb2312
+[ERROR] [14:54:33.876] [JavaFX Application Thread] [] com.zzg.mybatis.generator.controller.DbConnectionController.testConnection:72 --> Unknown database 'time'
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'time'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[na:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:939) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1694) ~[na:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1215) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2255) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2286) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2085) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795) ~[na:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[na:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[na:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400) ~[na:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327) ~[na:na]
+	at com.zzg.mybatis.generator.util.DbUtil.getConnection(DbUtil.java:48) ~[classes/:na]
+	at com.zzg.mybatis.generator.controller.DbConnectionController.testConnection(DbConnectionController.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source) [na:1.8.0_121]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_121]
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source) [na:1.8.0_121]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1771) [jfxrt.jar:na]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Node.fireEvent(Node.java:8413) [jfxrt.jar:na]
+	at javafx.scene.control.Button.fire(Button.java:185) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) [jfxrt.jar:na]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) [jfxrt.jar:na]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) [jfxrt.jar:na]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) [jfxrt.jar:na]
+	at javafx.event.Event.fireEvent(Event.java:198) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) [jfxrt.jar:na]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) [jfxrt.jar:na]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) [jfxrt.jar:na]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) [jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_121]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) [jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:na]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) [jfxrt.jar:na]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_121]
+[INFO] [14:55:39.500] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:55:39.506] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@46c60e5a
+[INFO] [14:55:42.309] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:55:42.309] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableNames:55 --> getTableNames, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:55:42.309] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [14:55:42.316] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@5113f981
+[INFO] [15:03:47.650] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:03:47.653] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:03:47.656] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:03:47.950] [JavaFX Application Thread] [] org.mybatis.generator.logging.LogFactory.setImplementation:105 --> Logging initialized using 'org.mybatis.generator.logging.slf4j.Slf4jLoggingLogFactory@5a157450' adapter.
+[DEBUG] [15:03:47.953] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:03:47.971] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:03:47.971] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:03:47.972] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:03:47.972] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:04:57.992] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:04:57.993] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:04:57.994] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:04:58.416] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:04:58.434] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:04:58.435] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:04:58.436] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:04:58.436] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:05:00.432] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:05:00.433] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:05:00.433] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:05:00.685] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:05:00.699] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:05:00.700] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:05:00.700] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:05:00.701] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:05:02.431] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:05:02.433] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:05:02.433] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:05:02.695] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:05:02.710] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:05:02.710] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:05:02.711] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:05:02.713] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:05:04.520] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:05:04.521] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:05:04.522] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:05:04.810] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:05:04.826] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:05:04.826] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:05:04.827] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:05:04.828] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:23.583] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:23.584] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:23.585] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:23.815] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:06:23.828] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:06:23.829] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:06:23.829] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:06:23.830] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:27.406] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:27.407] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:27.408] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:27.671] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:06:27.689] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:06:27.690] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:06:27.690] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:06:27.691] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:29.109] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:29.110] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:29.111] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:29.345] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:06:29.357] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:06:29.357] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:06:29.358] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:06:29.358] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:30.895] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:30.896] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:30.896] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:31.123] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:06:31.133] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:06:31.134] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:06:31.134] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:06:31.134] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:33.425] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:33.426] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:33.426] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:33.653] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:06:33.665] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:06:33.665] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:06:33.665] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:06:33.666] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:06:45.765] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:06:45.766] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:06:45.766] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:06:45.998] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:06:46.010] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:06:46.011] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:06:46.011] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:06:46.011] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:08:26.390] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:08:26.392] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:08:26.393] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:08:26.649] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:08:26.660] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:08:26.660] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:08:26.661] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:08:26.661] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:09:42.679] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:09:42.680] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:09:42.680] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:09:42.908] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:09:42.920] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:42.921] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:42.921] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:09:42.922] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:09:49.772] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:09:49.774] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:09:49.774] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:09:50.045] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:09:50.057] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:50.058] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:50.058] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:09:50.059] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:09:52.422] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:09:52.423] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:09:52.424] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:09:52.861] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:09:52.873] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:52.873] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:09:52.874] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:09:52.874] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:12:27.135] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:12:27.136] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:12:27.137] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:12:27.368] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:12:27.383] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:27.384] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:27.384] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:12:27.385] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:12:29.183] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:12:29.184] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:12:29.184] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:12:29.417] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:12:29.429] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:29.430] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:29.430] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:12:29.430] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:12:31.253] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:12:31.254] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:12:31.255] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:12:31.538] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:12:31.549] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:31.550] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:31.550] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:12:31.550] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:12:33.845] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:12:33.846] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:12:33.847] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:12:34.099] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:12:34.111] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:34.112] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:34.112] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:12:34.112] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:12:35.679] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:12:35.680] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:12:35.681] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:12:35.905] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:12:35.916] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:35.916] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:12:35.917] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:12:35.917] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:13:30.460] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:13:30.461] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:13:30.462] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:13:30.698] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:13:30.710] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:13:30.710] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:13:30.711] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:13:30.711] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:14:41.757] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:14:41.758] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:14:41.760] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:14:41.979] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.t_user"
+[DEBUG] [15:14:41.991] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "userid", data type 4, in table "tim..t_user"
+[DEBUG] [15:14:41.991] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "tnum", data type 12, in table "tim..t_user"
+[DEBUG] [15:14:41.991] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "emaile", data type 12, in table "tim..t_user"
+[DEBUG] [15:14:41.992] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "phone", data type 12, in table "tim..t_user"
+[DEBUG] [15:14:41.992] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "password", data type 12, in table "tim..t_user"
+[DEBUG] [15:14:41.993] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "name", data type 12, in table "tim..t_user"
+[DEBUG] [15:14:41.993] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "isonline", data type -7, in table "tim..t_user"
+[DEBUG] [15:14:41.993] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "touxiang", data type 12, in table "tim..t_user"
+[INFO] [15:15:29.814] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:15:29.815] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:15:29.816] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:15:30.080] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.usergroup"
+[DEBUG] [15:15:30.098] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:15:30.099] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "userid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:15:30.099] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:15:30.100] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "ename", data type 12, in table "tim..usergroup"
+[DEBUG] [15:15:30.100] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "unreadnum", data type 4, in table "tim..usergroup"
+[INFO] [15:15:48.245] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:15:48.246] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:15:48.246] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:15:48.477] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ptphismes"
+[DEBUG] [15:15:48.493] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:15:48.494] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "sender", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:15:48.494] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "receiver", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:15:48.495] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ptphismes"
+[DEBUG] [15:15:48.495] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ptphismes"
+[DEBUG] [15:15:48.495] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "isSend", data type -7, in table "tim..ptphismes"
+[INFO] [15:15:50.954] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:15:50.954] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:15:50.955] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:15:50.961] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@29a6ac9b
+[INFO] [15:16:05.540] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:16:05.541] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:16:05.541] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:16:05.760] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:16:05.771] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:16:05.772] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:16:05.772] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:16:05.773] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:16:07.691] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:16:07.691] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:16:07.692] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:16:07.697] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@543bcfc8
+[INFO] [15:16:12.288] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:16:12.289] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:16:12.289] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:16:12.510] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:16:12.520] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:16:12.521] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:16:12.521] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:16:12.522] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:46:56.534] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: com.mysql.jdbc.Driver@5406b652
+[INFO] [15:46:56.547] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: oracle.jdbc.driver.OracleDriver@3ebc97e1
+[INFO] [15:46:56.554] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: org.postgresql.Driver@4ec001c3
+[INFO] [15:46:56.664] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: SQLServerDriver:2
+[INFO] [15:46:56.665] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.<clinit>:32 --> load driver class: org.sqlite.JDBC@20c3dba0
+[INFO] [15:46:56.665] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:46:56.665] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableNames:55 --> getTableNames, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:46:56.666] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:46:56.958] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@49156859
+[INFO] [15:47:01.806] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:47:01.807] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:47:01.807] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:47:01.815] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@48ef147b
+[INFO] [15:48:56.945] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:48:56.947] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:48:56.952] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:48:57.282] [JavaFX Application Thread] [] org.mybatis.generator.logging.LogFactory.setImplementation:105 --> Logging initialized using 'org.mybatis.generator.logging.slf4j.Slf4jLoggingLogFactory@211c3a1a' adapter.
+[DEBUG] [15:48:57.285] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ghistorymessage"
+[DEBUG] [15:48:57.303] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:48:57.304] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..ghistorymessage"
+[DEBUG] [15:48:57.304] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ghistorymessage"
+[DEBUG] [15:48:57.304] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ghistorymessage"
+[INFO] [15:49:00.775] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:00.776] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:00.776] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:00.785] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@64dc5305
+[INFO] [15:49:13.064] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:49:13.065] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:49:13.065] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:49:13.443] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.group"
+[DEBUG] [15:49:13.456] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..group"
+[DEBUG] [15:49:13.457] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupname", data type 12, in table "tim..group"
+[DEBUG] [15:49:13.458] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupintroduce", data type 12, in table "tim..group"
+[DEBUG] [15:49:13.458] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "imgurl", data type 12, in table "tim..group"
+[INFO] [15:49:16.440] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:16.441] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:16.441] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:16.447] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@79d73e50
+[INFO] [15:49:21.368] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:49:21.368] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:49:21.369] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:49:21.611] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.ptphismes"
+[DEBUG] [15:49:21.623] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "id", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:49:21.623] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "sender", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:49:21.624] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "receiver", data type 4, in table "tim..ptphismes"
+[DEBUG] [15:49:21.624] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "message", data type -1, in table "tim..ptphismes"
+[DEBUG] [15:49:21.625] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "stime", data type 93, in table "tim..ptphismes"
+[DEBUG] [15:49:21.625] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "isSend", data type -7, in table "tim..ptphismes"
+[INFO] [15:49:24.047] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:24.047] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:24.048] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:24.053] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@2bc3801e
+[INFO] [15:49:32.578] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:49:32.580] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:49:32.580] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:49:32.813] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.t_user"
+[DEBUG] [15:49:32.835] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "userid", data type 4, in table "tim..t_user"
+[DEBUG] [15:49:32.836] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "tnum", data type 12, in table "tim..t_user"
+[DEBUG] [15:49:32.837] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "emaile", data type 12, in table "tim..t_user"
+[DEBUG] [15:49:32.838] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "phone", data type 12, in table "tim..t_user"
+[DEBUG] [15:49:32.838] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "password", data type 12, in table "tim..t_user"
+[DEBUG] [15:49:32.839] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "name", data type 12, in table "tim..t_user"
+[DEBUG] [15:49:32.839] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "isonline", data type -7, in table "tim..t_user"
+[DEBUG] [15:49:32.840] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "touxiang", data type 12, in table "tim..t_user"
+[INFO] [15:49:36.847] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:36.847] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getTableColumns:93 --> getTableColumns, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:36.848] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[INFO] [15:49:36.858] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnection:49 --> getConnection, connection url: com.mysql.jdbc.JDBC4Connection@337f4f81
+[INFO] [15:49:48.980] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.ConfigHelper.findConnectorLibPath:215 --> jar resource: file:/C:/Mybatis/mybatis-generator-gui-master/target/classes/logback.xml
+[INFO] [15:49:48.981] [JavaFX Application Thread] [] com.zzg.mybatis.generator.bridge.MybatisGeneratorBridge.generate:61 --> connectorLibPath: C:\Mybatis\mybatis-generator-gui-master\target\classes\lib\mysql-connector-java-5.1.38.jar
+[INFO] [15:49:48.982] [JavaFX Application Thread] [] com.zzg.mybatis.generator.util.DbUtil.getConnectionUrlWithSchema:115 --> getConnectionUrlWithSchema, connection url: jdbc:mysql://localhost:3306/tim?useUnicode=true&useSSL=false&characterEncoding=utf8
+[DEBUG] [15:49:49.226] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:506 --> Retrieving column information for table "tim.usergroup"
+[DEBUG] [15:49:49.239] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "usergroupid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:49:49.240] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "userid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:49:49.240] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "groupid", data type 4, in table "tim..usergroup"
+[DEBUG] [15:49:49.240] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "ename", data type 12, in table "tim..usergroup"
+[DEBUG] [15:49:49.241] [JavaFX Application Thread] [] org.mybatis.generator.internal.db.DatabaseIntrospector.getColumns:563 --> Found column "unreadnum", data type 4, in table "tim..usergroup"
